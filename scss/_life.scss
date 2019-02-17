@@ -1,0 +1,41 @@
+@import 'variables';
+
+#life {
+    .inner-section-content {
+        .events {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 21rem 21rem;
+
+            .event {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 50%;
+                    height: 100%; 
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+ }
