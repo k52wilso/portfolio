@@ -1,0 +1,50 @@
+@import 'variables';
+
+#projects {
+    .inner-section-content {
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 21rem;
+
+            .project {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%; 
+                }
+
+                .project-info {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem;
+
+                    a {
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+ }
