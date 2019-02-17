@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>KWM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
     <script src="bundle.js"></script>
     <style>
@@ -13,7 +14,7 @@
             height: 100%;
             display: block;
             overflow: hidden;
-            position: absolute;
+            position: fixed;
             top: 0;
         }
     </style>
@@ -31,7 +32,7 @@
         <circle class="grey-circle" cx="0" cy="100" r="10" fill="#7F7F7F" />
 
     </svg>
-    <header class="header">
+    <header id="home" class="header current">
         <div class="main-area">
             <div class="logo-box">
                 <h1 class="logo">KWM</h1>
@@ -39,16 +40,19 @@
             <div class="sections-box">
                 <ul class="sections">
                     <li class="list-section" title="bio">
-                        <a href="#">Bio</a>
+                        <a href="#bio">Bio</a>
                     </li>
                     <li class="list-section" title="skills">
-                        <a href="#">Skills</a>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="list-section" title="skills">
+                        <a href="#projects">Projects</a>
                     </li>
                     <li class="list-section" title="life">
-                        <a href="#">Life</a>
+                        <a href="#life">Life</a>
                     </li>
                     <li class="list-section" title="contact">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -58,6 +62,11 @@
         <div class="inner-section">
             <div class="inner-section-title">
                 <h1>Bio</h1>
+                <div class="navigation-icons">
+                        <a href="#home"><i class="fas fa-home" title="home"></i></a>
+                            <a href="#home"><i class="far fa-arrow-alt-circle-up" title="home"></i></a>
+                                <a href="#skills"><i class="far fa-arrow-alt-circle-down" title="skills" onClick="moveUp(this);"></i></a>
+                </div>
             </div>
             <div class="inner-section-content">
                 <div class="bio-photo-box">
@@ -75,15 +84,107 @@
             </div>
         </div>
     </section>
+    <section id="skills" class="section">
+            <div class="inner-section">
+                <div class="inner-section-title">
+                    <h1>Skills</h1>
+                    <div class="navigation-icons">
+                            <a href="#home"><i class="fas fa-home" title="home"></i></a>
+                                <a href="#bio"><i class="far fa-arrow-alt-circle-up" title="bio"></i></a>
+                                    <a href="#projects"><i class="far fa-arrow-alt-circle-down" title="life"></i></a>
+                    </div>
+                </div>
+                <div class="inner-section-content">
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-area">
+                                <i class="fab fa-js-square"></i>
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-area">
+                                <i class="fab fa-react"></i>
+                                <p>React/Redux</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-area">
+                                <i class="fab fa-python"></i>
+                                <p>Python</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-area">
+                                <i class="fas fa-drafting-compass"></i>
+                                <p>Test Automation</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-area">
+                                <i class="fas fa-database"></i>
+                                <p>Data Science / Machine Learning</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-area">
+                                <i class="fas fa-desktop"></i>
+                                <p>DevOps</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="projects" class="section">
+            <div class="inner-section">
+                <div class="inner-section-title">
+                    <h1>Projects</h1>
+                    <div class="navigation-icons">
+                            <a href="#home"><i class="fas fa-home" title="home"></i></a>
+                                <a href="#skills"><i class="far fa-arrow-alt-circle-up" title="skills"></i></a>
+                                    <a href="#life"><i class="far fa-arrow-alt-circle-down" title="life"></i></a>
+                    </div>
+                </div>
+                <div class="inner-section-content">
+                    
+                </div>
+            </div>
+    </section>
+    <section id="life" class="section">
+            <div class="inner-section">
+                <div class="inner-section-title">
+                    <h1>Life</h1>
+                    <div class="navigation-icons">
+                        <a href="#home"><i class="fas fa-home" title="home"></i></a>
+                        <a href="#projects"><i class="far fa-arrow-alt-circle-up" title="projects"></i></a>
+                        <a href="#contact"><i class="far fa-arrow-alt-circle-down" title="contact"></i></a>
+                    </div>
+                </div>
+                <div class="inner-section-content">
+                    
+                </div>
+            </div>
+    </section>
+    <section id="contact" class="section">
+            <div class="inner-section">
+                <div class="inner-section-title">
+                    <h1>Contact</h1>
+                    <div class="navigation-icons">
+                        <a href="#home"><i class="fas fa-home" title="home"></i></a>
+                        <a href="#life"><i class="far fa-arrow-alt-circle-up" title="life"></i></a>
+                    </div>
+                </div>
+                <div class="inner-section-content">
+                       <a class="btn btn-white" href="https://www.linkedin.com/in/kylewilsonmccormack/" target="_blank">LinkedIn</a>
+                       <a class="btn btn-white" href="mailto:kyle.wilsonmccormack@gmail.com">kyle.wilsonmccormack@gmail.com</a> 
+                </div>
+            </div>
+    </section>
     <script>
-        document.querySelectorAll('.list-section').forEach((section) =>{
-            section.addEventListener('click',() =>{
-                const sectionById = document.getElementById(section.getAttribute('title'));
-                const header = document.querySelector('.header');
-                header.classList.add('move-up');
-                sectionById.classList.add('move-up');
-            })
-        });
+
+        
+
         const greyPathFunction = () => {
             let paths = document.getElementsByClassName('grey-path');
                 let pathLength = paths[0].getTotalLength(); // 800
