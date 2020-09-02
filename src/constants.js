@@ -4,7 +4,7 @@ export const CONSTANTS = {
         subtitle: "My knowledge level in software"
     },{
         title: "PORTFOLIO",
-        subtitle: "My latest work"
+        subtitle: "My latest work (CURRENTLY UPDATING...)"
     },{
         title: "EXPERIENCE",
         subtitle: undefined
