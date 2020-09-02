@@ -1,0 +1,196 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+.App {
+  background-image: url("./assets/images/nature.jpg"), linear-gradient(rgba(21, 20, 24, 0.6),rgba(49, 40, 65, 0.6));
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+.home {
+  background-image: url("./assets/images/workplace.jpg"), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  background-blend-mode: overlay;
+  height: 95vh;
+  background-size: 100% 100%;
+  .name-container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    .name {
+      width: 600px;
+      h1 {
+        color: #fff;
+        font-size: 72px;
+        text-transform: uppercase;
+        word-break: break-word;
+        letter-spacing: 10px;
+      }
+      p {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.logo {
+  margin: 0 30px;
+  h2 {
+    color: rgb(33, 150, 243);
+    i {
+      margin: 0 10px;
+      font-size: 36px;
+    }
+  }
+}
+
+.section_header {
+  h2,p {
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 56px;
+    margin: 0;
+    span {
+      color: #c6c6c6;
+      margin-right: 15px;
+    }
+  }
+  p {
+    font-size: 26px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  .navbar {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    .nav-link {
+      display: block;
+      color: #c6c6c6;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 12px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.bio {
+  background: transparent;
+  height: 110vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 350px 0 0 0;
+  box-sizing: border-box;
+  .summary {
+    position: absolute;
+    width: 800px;
+    background-color: #40407a;
+    height: auto;
+    padding: 50px 60px;
+    box-sizing: border-box;
+    top: -150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      display: block;
+      width: 500px;
+      color: #fff;
+      line-height: 2;
+    }
+    .button {
+      color: #fff;
+      background: transparent;
+      border: 1px solid rgb(33, 150, 243);
+      padding: 15px 20px;
+      text-decoration: none;
+      &:hover {
+        background: rgb(33, 150, 243);
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.portfolio_experience {
+  background-image: url("./assets/images/snow.jpg"), linear-gradient(rgba(21, 20, 24, 0.9),rgba(21, 20, 24, 0.9));
+  background-blend-mode: overlay;
+  height: 320vh;
+  background-size: 100% 100%;
+  padding: 100px 0;
+  .portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+        border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+    }
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  .contact_area {
+    position: absolute;
+    background-color: #40407a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -250px;
+    width: 800px;
+    height: 500px;
+    padding: 30px 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    .info {
+      * {
+        color: #fff;
+      }
+    }
+    .form {
+      .form-label {
+        color: #fff;
+      }
+    }
+  }
+}

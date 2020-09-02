@@ -1,0 +1,18 @@
+.skills {
+    margin: 50px 0;
+    .skill {
+        display: flex;
+        p {
+            min-width: 140px;
+            color: #c6c6c6;
+            margin-right: 10px;
+            text-transform: uppercase;
+        }
+        .inner-rect-bar {
+            background-color:rgb(33, 150, 243) !important;
+        }
+        .progress-bar {
+            background: none !important;
+        }
+    }
+}
