@@ -6,6 +6,23 @@ export const Timeline = () => {
     return (
         <div className="experience_timeline">
             <VerticalTimeline>
+            <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{
+                    background: 'rgb(33, 150, 243)',
+                    color: '#fff'
+                }}
+                    contentArrowStyle={{
+                    borderRight: '7px solid rgb(33, 150, 243)'
+                }}
+                    date="Jan 2021 - present"
+                    iconStyle={{
+                    background: 'rgb(33, 150, 243)',
+                    color: '#fff'
+                }}>
+                    <h3 className="vertical-timeline-element-title">Anaplan</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Cloud Solutions Developer</h4>
+                </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{
@@ -15,7 +32,7 @@ export const Timeline = () => {
                     contentArrowStyle={{
                     borderRight: '7px solid rgb(33, 150, 243)'
                 }}
-                    date="Apr 2020 - present"
+                    date="Apr 2020 - Sept 2020"
                     iconStyle={{
                     background: 'rgb(33, 150, 243)',
                     color: '#fff'
