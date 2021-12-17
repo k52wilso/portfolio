@@ -91,7 +91,7 @@
 
 .bio {
   background: transparent;
-  height: 110vh;
+  height: auto;
   position: relative;
   display: flex;
   align-items: center;
@@ -133,7 +133,8 @@
 .portfolio_experience {
   background-image: url("./assets/images/snow.jpg"), linear-gradient(rgba(21, 20, 24, 0.9),rgba(21, 20, 24, 0.9));
   background-blend-mode: overlay;
-  height: 320vh;
+  width: 100%;
+  height: auto;
   background-size: 100% 100%;
   padding: 100px 0;
   .portfolio {
@@ -166,18 +167,22 @@
 
 .contact {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   position: relative;
   background: transparent;
   display: flex;
   justify-content: center;
+  .text-muted {
+    color: #fff !important;
+    font-size: 10px;
+  }
   .contact_area {
     position: absolute;
     background-color: #40407a;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: -250px;
+    bottom: 100px;
     width: 800px;
     height: 500px;
     padding: 30px 40px;
